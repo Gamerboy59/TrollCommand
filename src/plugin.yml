@@ -1,0 +1,23 @@
+name: TrollCommand
+main: com.Gamerboy59.bukkit.TrollCommand.Main
+description: A troll command replaying its name.
+author: Gamerboy59
+website: https://github.com/Gamerboy59?tab=repositories
+version: 1.0
+depend: [NoCheatPlus]
+softdepend: [ProtocolLib, Vault]
+
+commands:
+    troll:
+        description: Displays troll message
+        usage: /<command> <Player>
+        aliases: [trol, trollol]
+
+permissions:
+    trollcommand.*:
+        description: Give all permissions
+        children:
+            cpf.admin: true
+    trollcommand.admin:
+        description: Can use admin command
+        default: op
